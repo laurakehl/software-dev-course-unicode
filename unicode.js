@@ -86,15 +86,25 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); // character at position 1
+let thirdCodePoint = inputString1.charCodeAt(2); // character at position 3
+
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let codes = [72, 101, 108, 108, 212]; // I added in code for 'o' to make unicode for Hello
+let wordFromCodePoints =String.fromCharCode(codes[0]) + String.fromCharCode(codes[1]) + String.fromCharCode(codes[2]) + String.fromCharCode(codes[3]) + String.fromCharCode(codes[4]);
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let letterOne = inputString2.charCodeAt(0);
+let letterTwo = inputString2.charCodeAt(1);
+let letterThree = inputString2.charCodeAt(2);
+let letterFour = inputString2.charCodeAt(3);
+let letterFive = inputString2.charCodeAt(4);
+let letterSix = inputString2.charCodeAt(5);
+let swappedString = String.fromCharCode(letterSix) + String.fromCharCode(letterTwo) + String.fromCharCode(letterThree) + String.fromCharCode(letterFour) + String.fromCharCode(letterFive) + String.fromCharCode(letterOne);
+
 
 // Log all results
 console.log({
